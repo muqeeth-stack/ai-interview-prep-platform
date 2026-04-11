@@ -1,0 +1,24 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  margin-top: 50px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  width: 90%;
+}
+
+li {
+  background: #1e293b;
+  margin: 5px;
+  padding: 10px;
+}

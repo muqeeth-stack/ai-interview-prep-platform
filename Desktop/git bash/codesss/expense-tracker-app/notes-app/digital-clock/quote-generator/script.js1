@@ -1,0 +1,33 @@
+const sentences = [
+  "Practice makes a man perfect",
+  "JavaScript is powerful",
+  "Typing speed matters in coding",
+  "Stay consistent and keep learning"
+];
+
+let startTime, timer;
+
+function startTest() {
+  const sentence = sentences[Math.floor(Math.random() * sentences.length)];
+  document.getElementById("sentence").innerText = sentence;
+
+  document.getElementById("input").value = "";
+  document.getElementById("time").innerText = "0";
+  document.getElementById("wpm").innerText = "0";
+
+  startTime = new Date();
+  
+  timer = setInterval(updateTime, 1000);
+}
+
+function updateTime() {
+  const now = new Date();
+  const seconds = Math.floor((now - startTime) / 1000);
+  document.getElementById("time").innerText = seconds;
+
+  const text = document.getElementById("input").value;
+  const words = text.trim().split(" ").length;
+
+  const wpm = Math.floor((words / seconds) * 60) || 0;
+  document.getElementById("wpm").innerText = wpm;
+}

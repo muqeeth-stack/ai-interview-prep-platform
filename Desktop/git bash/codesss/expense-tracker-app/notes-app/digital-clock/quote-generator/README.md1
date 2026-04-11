@@ -1,0 +1,14 @@
+# Typing Speed Test
+
+## Features
+- Random typing sentences
+- Timer and WPM calculation
+- Simple UI
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+
+## How to Run
+Open index.html in browser
